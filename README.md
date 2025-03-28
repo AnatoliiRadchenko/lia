@@ -26,41 +26,41 @@ Launch shell scripts, ansible playbooks, terraform commands etc.
 
 ```shell
 {
-    "title": "Main menu",
+    "title": "Main Menu",
     "items": [
         {
-            "text": "Gestione Infrastruttura",
+            "text": "Infrastructure Management",
             "type": "submenu",
             "items": [
                 {
-                    "text": "Provisioning AWS",
+                    "text": "AWS Provisioning",
                     "type": "ansible",
                     "playbook": "aws_provision.yml",
                     "inventory": "aws_inventory"
                 },
                 {
-                    "text": "Scheda Terraform",
+                    "text": "Terraform Plan",
                     "type": "terraform",
                     "command": ["plan", "-var-file=prod.tfvars"]
                 }
             ]
         },
         {
-            "text": "Backup Sistemi",
+            "text": "System Backup",
             "type": "ansible",
             "playbook": "backup.yml"
         },
         {
-            "text": "Configurazione Reti",
+            "text": "Network Configuration",
             "type": "submenu",
             "items": [
                 {
-                    "text": "Configura Router",
+                    "text": "Configure Router",
                     "type": "shell",
                     "command": ["ssh", "router1.example.com", "config-router.sh"]
                 },
                 {
-                    "text": "Configura Switch",
+                    "text": "Configure Switch",
                     "type": "ansible",
                     "playbook": "switch_config.yml"
                 }
