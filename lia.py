@@ -86,10 +86,11 @@ def handle_selection(menu_config, _level, menuPre = None):
                     time.sleep(1)
                 else:
                     menu_config=menu_config["items"][int(selected)-1]
+                    if 'type' not in menu_config and 'items'  in menu_config:
+                         menu_config['type']='submenu'
+                    print(menu_config)
                     match menu_config['type']:
-                        case _:
                         case 'submenu': 
-                            #menuPre=menu_config
                             _level +=1
                         case 'function':
                             #print(menu_config)
