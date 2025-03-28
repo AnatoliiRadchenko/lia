@@ -1,0 +1,12 @@
+{
+    "title": "Libra Infrastrucre Automation"
+    ,"selectOption": "select an option:"
+    ,"bye":"bye.."
+    ,"menuIsDisabled":"menu is disabled"
+    ,"exitProgram":"exit from program.."
+    ,"usage":"usage: python menu.py [config_file.json|config_file.yaml]"
+    ,"error":"error"
+    ,"exit":"exit"
+    ,"mainMenu":"main menu"
+    ,"insertNumberOr":"insert the number of option (or '0' for " 
+}

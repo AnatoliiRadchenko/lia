@@ -1,0 +1,74 @@
+{
+    "title": "Menu principale",
+    "items": [
+        {
+            "text":"hypervisor",
+            "items":[
+                {
+                    "text":"Proxmox",
+                    "items":["install PVE (Virtual Environment)","install PBS (Backup Server)","import .ova","export VM","convert LXC","import from VMWare"]
+                }
+            ]
+        },
+        "Container",
+        {
+            "text": "Monitoring",
+            "type": "submenu",
+            "items": [
+                {
+                    "text": "Centreon",
+                    "type": "submenu",
+                    "items":[
+                        {
+                            "text": "add host"
+                        },
+                        {
+                            "text": "enable host"
+                        }
+                    ]
+                },
+                {
+                    "text": "Prometheus",
+                    "items":[
+                        {
+                            "text":"add host"
+                        },{
+                            "text":"add host"
+                        },{
+                            "text":"install Prometheus + Grafana cluster HA High availiability"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Share",
+            "type": "submenu",
+            "items":[{"text":"samba"},{"text":"NFS"},{"text":"FTP"},{"text":"S3"}]
+        },
+        {
+            "text": "Language",
+            "type": "submenu",
+            "items": [
+                {
+                    "text": "italiano",
+                    "type": "function",
+                    "function": "changeLanguage",
+                    "arg":["it"]
+                },
+                {
+                    "text": "english",
+                    "type": "function",
+                    "function": "changeLanguage",
+                    "arg":["en"]
+                },
+                {
+                    "text": "русский",
+                    "type": "function",
+                    "function": "changeLanguage",
+                    "arg":["ru"]
+                }
+            ]
+        }
+    ]
+}

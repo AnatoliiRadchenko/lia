@@ -1,0 +1,12 @@
+{
+    "title": "Libra Infrastrucre Automation"
+    ,"selectOption": "seleziona un'opzione:"
+    ,"bye":"arrivederci.."
+    ,"menuIsDisabled":"menu è disabilitato"
+    ,"exitProgram":"uscita dal programma"
+    ,"usage":"usare: python menu.py [config_file.json|config_file.yaml]"
+    ,"error":"errore"
+    ,"exit":"uscire"
+    ,"mainMenu":"menu principale"
+    ,"insertNumberOr":"inserisci il numero dell'opzione (o '0' per " 
+}

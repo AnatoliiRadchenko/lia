@@ -1,0 +1,12 @@
+{
+      "title":   "автоматизация инфраструктуры libra",
+      "selectOption":   "выберите опцию:",
+      "bye":"до свидания..",
+      "menuIsDisabled":"меню отключено",
+      "exitProgram":"выход из программы",
+      "usage":"использование: python menu.py  [config_file. json| config_file. yaml]",
+      "error":"ошибка",
+      "exit":"выйти",
+      "mainMenu":"главное меню",
+      "insertNumberOr":"введите номер опции   (или  '0' для"
+}
