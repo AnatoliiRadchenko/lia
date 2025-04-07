@@ -10,7 +10,7 @@
                         {
                             "text":"essential",
                             "type":"ansible",
-                            "path":"postinstallOsEssential.yml"
+                            "path":"postinstall_OS_essential.yml"
                         }
                     ]
             }
@@ -20,8 +20,9 @@
             "text":"development",
             "items":[
                 {
-                    "text":"install VS code"
-
+                    "text":"install VS code",
+                    "type": "ansible",
+                    "path": ""
                 },
             "android studio"
             ]

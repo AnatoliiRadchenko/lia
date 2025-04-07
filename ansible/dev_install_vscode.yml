@@ -1,0 +1,50 @@
+---
+- name: development - install VS code
+  hosts: localhost
+  become: yes
+  vars:
+    shared_packages:
+      - code
+  tasks:
+  - name: Verificare se il file del repository esiste
+    stat:
+      path: /etc/yum.repos.d/mio-repository.repo
+    register: repo_file_check
+
+  - name: Creare il file del repository se non esiste
+    copy:
+      content: |
+        [vscode-yum]
+        name=vscode-yum
+        baseurl=https://packages.microsoft.com/yumrepos/vscode/
+        repo_gpgcheck=0
+        gpgcheck=0
+        enabled=1
+        gpgkey=https://packages.microsoft.com/yumrepos/vscode/repodata/repomd.xml.key
+      dest: /etc/yum.repos.d/vscode.repo
+    when: ansible_distribution in ['RedHat', 'CentOS', 'Fedora'] and not repo_file_check.stat.exists
+  - name: Aggiornare il cache di YUM
+    yum:
+      update_cache: yes
+    when: ansible_distribution in ['RedHat', 'CentOS', 'Fedora'] and not repo_file_check.stat.exists
+
+
+
+  
+  - name: installation on Red Hat/CentOS/Fedora
+    debug:
+      msg: "the distribution is {{ ansible_distribution }}"
+  - name: installation on Red Hat/CentOS/Fedora
+    yum:
+      name: "{{ item }}"
+      state: present
+    loop: "{{ shared_packages }}"
+    when: shared_packages and (shared_packages|length>0) and ansible_distribution in ['RedHat', 'CentOS', 'Fedora']
+    become: yes
+  - name: installation on Debian/Ubuntu
+    apt:
+      name: "{{ item }}"
+      state: present
+    loop: "{{ shared_packages }}"
+    when: ansible_distribution in ['Debian', 'Ubuntu']
+    become: yes

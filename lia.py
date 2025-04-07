@@ -8,7 +8,7 @@ import os
 import time
 
 
-for _i in ["ansible","terraform","modules"]: os.makedirs(_i, exist_ok=True)
+for _i in ["ansible","terraform","modules"]: os.makedirs(_i, exist_ok = True)
 sys.path.append("modules")
 def load_module_from_url(url, module_name):
     try:
