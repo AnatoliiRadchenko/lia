@@ -1,0 +1,8 @@
+---
+- name: Install and configure Apache web server
+  hosts: all
+  become: yes
+  tasks:
+    - name: Determine OS distribution
+      debug:
+        msg: "test"

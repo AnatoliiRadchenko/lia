@@ -1,0 +1,50 @@
+---
+- name: postinstall OS installation of essential packages
+  hosts: localhost
+  become: yes
+  vars:
+    shared_packages: 
+      - mc
+      - wget
+      - telnet
+      - curl
+      - net-tools
+
+    rpm_packages: []
+
+    deb_packages: []
+
+  tasks:
+    - name: installation on Red Hat/CentOS/Fedora
+      debug:
+        msg: "the distribution is {{ ansible_distribution }}"
+    - name: installation on Red Hat/CentOS/Fedora
+      yum:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ shared_packages }}"
+      when: shared_packages and (shared_packages|length>0) and ansible_distribution in ['RedHat', 'CentOS', 'Fedora']
+      become: yes
+
+    - name: installation on Debian/Ubuntu
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ shared_packages }}"
+      when: ansible_distribution in ['Debian', 'Ubuntu']
+      become: yes
+    - name: installation on Red Hat/CentOS/Fedora
+      yum:
+        name: "{{ item }}"
+        state: present
+      when: rpm_packages and (rpm_packages|length>0) and ansible_distribution in ['RedHat', 'CentOS', 'Fedora']
+      loop: "{{ rpm_packages }}"
+      become: yes
+
+    - name: installation on Debian/Ubuntu
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ deb_packages }}"
+      when: deb_packages and (deb_packages|length>0) and ansible_distribution in ['Debian', 'Ubuntu']
+      become: yes

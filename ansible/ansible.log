@@ -1,0 +1,852 @@
+
+2025-04-07 17:52:37,608 p=1030459 u=libracluster n=ansible | ERROR! the playbook: test1.yaml could not be found
+2025-04-07 18:02:26,373 p=1031574 u=libracluster n=ansible | ERROR! the playbook: test1.yaml could not be found
+2025-04-07 18:03:21,982 p=1031753 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:03:22,346 p=1031753 u=libracluster n=ansible | PLAY [Installazione di più pacchetti con base sulla distribuzione] ***********************************************************************************************************************************************************
+2025-04-07 18:03:22,376 p=1031753 u=libracluster n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************************
+2025-04-07 18:03:27,718 p=1031753 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:03:27,796 p=1031753 u=libracluster n=ansible | TASK [Installazione su Red Hat/CentOS/Fedora] ********************************************************************************************************************************************************************************
+2025-04-07 18:03:27,869 p=1031753 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'items' is undefined. 'items' is undefined\n\nThe error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 6, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Installazione su Red Hat/CentOS/Fedora\n      ^ here\n"}
+2025-04-07 18:03:27,875 p=1031753 u=libracluster n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:03:27,876 p=1031753 u=libracluster n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 18:05:52,826 p=1032146 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:05:53,192 p=1032146 u=libracluster n=ansible | PLAY [Installazione di più pacchetti con base sulla distribuzione] *****************************************************************************************************************************************************************
+2025-04-07 18:05:53,245 p=1032146 u=libracluster n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************************************************
+2025-04-07 18:05:54,370 p=1032146 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2025-04-07 18:05:54,374 p=1032146 u=libracluster n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************************************************
+2025-04-07 18:05:54,376 p=1032146 u=libracluster n=ansible | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 18:06:15,928 p=1032199 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:06:16,294 p=1032199 u=libracluster n=ansible | PLAY [Installazione di più pacchetti con base sulla distribuzione] *****************************************************************************************************************************************************************
+2025-04-07 18:06:16,345 p=1032199 u=libracluster n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************************************************
+2025-04-07 18:06:20,046 p=1032199 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:06:20,115 p=1032199 u=libracluster n=ansible | TASK [Installazione su Red Hat/CentOS/Fedora] **************************************************************************************************************************************************************************************
+2025-04-07 18:06:20,190 p=1032199 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'items' is undefined. 'items' is undefined\n\nThe error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 6, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n    - name: Installazione su Red Hat/CentOS/Fedora\n      ^ here\n"}
+2025-04-07 18:06:20,195 p=1032199 u=libracluster n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************************************************
+2025-04-07 18:06:20,196 p=1032199 u=libracluster n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 18:08:01,842 p=1032495 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:08:02,186 p=1032495 u=libracluster n=ansible | PLAY [Installazione di più pacchetti con base sulla distribuzione] ***********************************************************************************************************************************************************
+2025-04-07 18:08:02,238 p=1032495 u=libracluster n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************************
+2025-04-07 18:08:06,837 p=1032495 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:08:06,913 p=1032495 u=libracluster n=ansible | TASK [Installazione su Red Hat/CentOS/Fedora] ********************************************************************************************************************************************************************************
+2025-04-07 18:08:17,195 p=1032495 u=libracluster n=ansible | ok: [localhost] => (item=nano)
+2025-04-07 18:08:25,527 p=1032495 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:08:25,553 p=1032495 u=libracluster n=ansible | TASK [Installazione su Debian/Ubuntu] ****************************************************************************************************************************************************************************************
+2025-04-07 18:08:25,621 p=1032495 u=libracluster n=ansible | skipping: [localhost] => (item=nano) 
+2025-04-07 18:08:25,628 p=1032495 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:08:25,632 p=1032495 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:08:25,727 p=1032495 u=libracluster n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:08:25,728 p=1032495 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:33:15,664 p=1035252 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:33:15,848 p=1035252 u=libracluster n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 33, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      become: yes
+      - name: installation on Red Hat/CentOS/Fedora
+      ^ here
+
+2025-04-07 18:33:53,030 p=1035365 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:33:53,396 p=1035365 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *********************************************************************************************************************************************************************
+2025-04-07 18:33:53,449 p=1035365 u=libracluster n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************************
+2025-04-07 18:33:58,181 p=1035365 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:33:58,251 p=1035365 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *********************************************************************************************************************************************************************************
+2025-04-07 18:34:07,500 p=1035365 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:34:15,501 p=1035365 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:34:23,667 p=1035365 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:34:31,495 p=1035365 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:34:39,517 p=1035365 u=libracluster n=ansible | failed: [localhost] (item=net-tool) => {"ansible_loop_var": "item", "changed": false, "failures": ["No package net-tool available."], "item": "net-tool", "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2025-04-07 18:34:39,525 p=1035365 u=libracluster n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:34:39,526 p=1035365 u=libracluster n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 18:35:16,085 p=1035933 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:35:16,459 p=1035933 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *********************************************************************************************************************************************************************
+2025-04-07 18:35:16,510 p=1035933 u=libracluster n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************************
+2025-04-07 18:35:20,952 p=1035933 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:35:21,019 p=1035933 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *********************************************************************************************************************************************************************************
+2025-04-07 18:35:29,758 p=1035933 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:35:37,620 p=1035933 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:35:45,935 p=1035933 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:35:53,710 p=1035933 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:36:01,931 p=1035933 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:36:01,958 p=1035933 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] *****************************************************************************************************************************************************************************************
+2025-04-07 18:36:02,037 p=1035933 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:36:02,044 p=1035933 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:36:02,055 p=1035933 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:36:02,067 p=1035933 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:36:02,070 p=1035933 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:36:02,075 p=1035933 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:36:02,102 p=1035933 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *********************************************************************************************************************************************************************************
+2025-04-07 18:36:02,144 p=1035933 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:36:02,148 p=1035933 u=libracluster n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:36:02,149 p=1035933 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:38:08,244 p=1036653 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:38:08,595 p=1036653 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *********************************************************************************************************************************************************************
+2025-04-07 18:38:08,648 p=1036653 u=libracluster n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************************
+2025-04-07 18:38:13,140 p=1036653 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:38:13,212 p=1036653 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *********************************************************************************************************************************************************************************
+2025-04-07 18:38:22,120 p=1036653 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:38:30,039 p=1036653 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:38:38,239 p=1036653 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:38:46,062 p=1036653 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:38:54,334 p=1036653 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:38:54,362 p=1036653 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] *****************************************************************************************************************************************************************************************
+2025-04-07 18:38:54,436 p=1036653 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:38:54,449 p=1036653 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:38:54,458 p=1036653 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:38:54,466 p=1036653 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:38:54,477 p=1036653 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:38:54,480 p=1036653 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:38:54,506 p=1036653 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *********************************************************************************************************************************************************************************
+2025-04-07 18:38:54,546 p=1036653 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:38:54,550 p=1036653 u=libracluster n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:38:54,550 p=1036653 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:40:21,605 p=1037344 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:40:21,793 p=1037344 u=libracluster n=ansible | ERROR! 'debug' is not a valid attribute for a Play
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: postinstall OS installation of essential packages
+  ^ here
+
+2025-04-07 18:40:59,474 p=1037428 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:40:59,667 p=1037428 u=libracluster n=ansible | ERROR! 'debug' is not a valid attribute for a Play
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: postinstall OS installation of essential packages
+  ^ here
+
+2025-04-07 18:41:48,322 p=1037515 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:41:48,520 p=1037515 u=libracluster n=ansible | ERROR! conflicting action statements: debug, yum
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 18, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: installation on Red Hat/CentOS/Fedora
+      ^ here
+
+2025-04-07 18:42:07,853 p=1037550 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:42:08,200 p=1037550 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:42:08,249 p=1037550 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:42:09,319 p=1037550 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2025-04-07 18:42:09,324 p=1037550 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:42:09,325 p=1037550 u=libracluster n=ansible | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 18:42:36,856 p=1037610 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:42:37,226 p=1037610 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:42:37,278 p=1037610 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:42:40,708 p=1037610 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:42:40,783 p=1037610 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:42:40,843 p=1037610 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "ansible_distribution"
+}
+2025-04-07 18:42:40,868 p=1037610 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:42:49,670 p=1037610 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:42:57,435 p=1037610 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:43:05,815 p=1037610 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:43:13,569 p=1037610 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:43:22,484 p=1037610 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:43:22,513 p=1037610 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:43:22,592 p=1037610 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:43:22,601 p=1037610 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:43:22,613 p=1037610 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:43:22,623 p=1037610 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:43:22,629 p=1037610 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:43:22,631 p=1037610 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:43:22,659 p=1037610 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:43:22,700 p=1037610 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:43:22,704 p=1037610 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:43:22,705 p=1037610 u=libracluster n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:45:55,422 p=1038064 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:45:55,774 p=1038064 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:45:55,824 p=1038064 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:45:59,364 p=1038064 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:45:59,435 p=1038064 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:45:59,508 p=1038064 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "Fedora"
+}
+2025-04-07 18:45:59,538 p=1038064 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:46:08,383 p=1038064 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:46:16,091 p=1038064 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:46:24,096 p=1038064 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:46:31,891 p=1038064 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:46:40,037 p=1038064 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:46:40,067 p=1038064 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:46:40,139 p=1038064 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:46:40,148 p=1038064 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:46:40,162 p=1038064 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:46:40,173 p=1038064 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:46:40,185 p=1038064 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:46:40,188 p=1038064 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:46:40,222 p=1038064 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:46:40,261 p=1038064 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:46:40,265 p=1038064 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:46:40,266 p=1038064 u=libracluster n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:48:20,404 p=1038455 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:48:20,792 p=1038455 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:48:20,842 p=1038455 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:48:24,268 p=1038455 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:48:24,338 p=1038455 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:48:24,408 p=1038455 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 18:48:24,435 p=1038455 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:48:33,429 p=1038455 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:48:41,172 p=1038455 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:48:49,281 p=1038455 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:48:57,103 p=1038455 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:49:05,269 p=1038455 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:49:05,297 p=1038455 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:49:05,380 p=1038455 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:49:05,385 p=1038455 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:49:05,387 p=1038455 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:49:05,396 p=1038455 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:49:05,401 p=1038455 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:49:05,405 p=1038455 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:49:05,449 p=1038455 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:49:05,521 p=1038455 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:49:05,525 p=1038455 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:49:05,526 p=1038455 u=libracluster n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:50:28,162 p=1038864 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:50:28,522 p=1038864 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:50:28,575 p=1038864 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:50:32,093 p=1038864 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:50:32,163 p=1038864 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:50:32,232 p=1038864 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 18:50:32,257 p=1038864 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:50:41,182 p=1038864 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:50:48,891 p=1038864 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:50:56,973 p=1038864 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:51:04,802 p=1038864 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:51:12,793 p=1038864 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:51:12,819 p=1038864 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:51:12,889 p=1038864 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:51:12,908 p=1038864 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:51:12,921 p=1038864 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:51:12,931 p=1038864 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:51:12,938 p=1038864 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:51:12,940 p=1038864 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:51:12,971 p=1038864 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:51:13,005 p=1038864 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:51:13,009 p=1038864 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:51:13,010 p=1038864 u=libracluster n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:52:43,978 p=1039171 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:52:44,352 p=1039171 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:52:44,403 p=1039171 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:52:47,801 p=1039171 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:52:47,865 p=1039171 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:52:47,938 p=1039171 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 18:52:47,964 p=1039171 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:52:56,841 p=1039171 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:53:04,640 p=1039171 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:53:12,587 p=1039171 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:53:20,496 p=1039171 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:53:28,627 p=1039171 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:53:28,654 p=1039171 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:53:28,731 p=1039171 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:53:28,741 p=1039171 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:53:28,743 p=1039171 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:53:28,759 p=1039171 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:53:28,763 p=1039171 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:53:28,766 p=1039171 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:53:28,793 p=1039171 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:53:28,833 p=1039171 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:53:28,837 p=1039171 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:53:28,838 p=1039171 u=libracluster n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:54:45,000 p=1039488 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:54:45,349 p=1039488 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:54:45,400 p=1039488 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:54:48,727 p=1039488 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:54:48,869 p=1039488 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:54:48,939 p=1039488 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 18:54:48,966 p=1039488 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:54:57,724 p=1039488 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:55:05,547 p=1039488 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:55:13,534 p=1039488 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:55:21,425 p=1039488 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:55:26,710 p=1039488 u=libracluster n=ansible |  [ERROR]: User interrupted execution
+
+2025-04-07 18:55:30,541 p=1039663 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:55:30,985 p=1039663 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:55:31,038 p=1039663 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:55:34,400 p=1039663 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:55:34,466 p=1039663 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:55:34,534 p=1039663 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 18:55:34,560 p=1039663 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:55:43,276 p=1039663 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 18:55:51,047 p=1039663 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 18:55:59,145 p=1039663 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 18:56:06,902 p=1039663 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 18:56:15,102 p=1039663 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 18:56:15,131 p=1039663 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:56:15,205 p=1039663 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 18:56:15,219 p=1039663 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 18:56:15,229 p=1039663 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 18:56:15,240 p=1039663 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 18:56:15,245 p=1039663 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 18:56:15,248 p=1039663 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 18:56:15,278 p=1039663 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:56:15,316 p=1039663 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 18:56:15,320 p=1039663 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:56:15,321 p=1039663 u=libracluster n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 18:58:03,022 p=1039994 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:58:03,217 p=1039994 u=libracluster n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 23, column 44, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      debug:
+        msg: "the distribution is {{ vars["rpm_packages"] is defined and (vars["rpm_packages"]|length>0) }}"
+                                           ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2025-04-07 18:58:28,980 p=1040050 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:58:29,164 p=1040050 u=libracluster n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected ',' or '}'
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 23, column 21, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      debug:
+        msg: {{ vars["rpm_packages"] }}
+                    ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2025-04-07 18:59:08,685 p=1040121 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:59:09,032 p=1040121 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 18:59:09,082 p=1040121 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:59:12,535 p=1040121 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 18:59:12,604 p=1040121 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:59:12,670 p=1040121 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 18:59:12,694 p=1040121 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 18:59:12,750 p=1040121 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "vars[\"rpm_packages\"]"
+}
+2025-04-07 18:59:12,781 p=1040121 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 18:59:15,185 p=1040121 u=libracluster n=ansible |  [ERROR]: User interrupted execution
+
+2025-04-07 18:59:29,714 p=1040224 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:59:29,906 p=1040224 u=libracluster n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected ',' or '}'
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 23, column 20, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      debug:
+        msg: {{vars["rpm_packages"]}}
+                   ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2025-04-07 18:59:48,899 p=1040264 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 18:59:49,091 p=1040264 u=libracluster n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 23, column 16, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      debug:
+        msg: { { rpm_packages } }
+               ^ here
+This one looks easy to fix. YAML thought it was looking for the start of a
+hash/dictionary and was confused to see a second "{". Most likely this was
+meant to be an ansible template evaluation instead, so we have to give the
+parser a small hint that we wanted a string instead. The solution here is to
+just quote the entire value.
+
+For instance, if the original line was:
+
+    app_path: {{ base_path }}/foo
+
+It should be written as:
+
+    app_path: "{{ base_path }}/foo"
+
+2025-04-07 19:00:03,726 p=1040299 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:00:04,085 p=1040299 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:04,140 p=1040299 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:07,477 p=1040299 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:00:07,550 p=1040299 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:07,623 p=1040299 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:00:07,651 p=1040299 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:07,711 p=1040299 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "{ { rpm_packages } }"
+}
+2025-04-07 19:00:07,738 p=1040299 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:12,096 p=1040299 u=libracluster n=ansible |  [ERROR]: User interrupted execution
+
+2025-04-07 19:00:20,479 p=1040404 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:00:20,831 p=1040404 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:20,883 p=1040404 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:24,290 p=1040404 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:00:24,360 p=1040404 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:24,432 p=1040404 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:00:24,458 p=1040404 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:24,519 p=1040404 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": null
+}
+2025-04-07 19:00:24,549 p=1040404 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:00:26,946 p=1040404 u=libracluster n=ansible |  [ERROR]: User interrupted execution
+
+2025-04-07 19:02:09,281 p=1040658 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:02:09,641 p=1040658 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:02:09,692 p=1040658 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:02:13,029 p=1040658 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:02:13,101 p=1040658 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:02:13,188 p=1040658 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:02:13,213 p=1040658 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:02:13,337 p=1040658 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Unexpected templating type error occurred on ({{ vars['rpm_packages']|length }}): object of type 'NoneType' has no len(). object of type 'NoneType' has no len()"}
+2025-04-07 19:02:13,341 p=1040658 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:02:13,342 p=1040658 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:02:37,422 p=1040771 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:02:37,613 p=1040771 u=libracluster n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/libracluster/dev/lia/ansible/postinstallOsEssential.yml': line 23, column 24, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      debug:
+        msg: "{{ vars["rpm_packages"]|length }}"
+                       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2025-04-07 19:02:58,129 p=1040808 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:02:58,478 p=1040808 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:02:58,527 p=1040808 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:03:01,858 p=1040808 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:03:01,928 p=1040808 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:03:01,995 p=1040808 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:03:02,021 p=1040808 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:03:02,146 p=1040808 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Unexpected templating type error occurred on ({{ rpm_packages|length }}): object of type 'NoneType' has no len(). object of type 'NoneType' has no len()"}
+2025-04-07 19:03:02,152 p=1040808 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:03:02,153 p=1040808 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:04:02,887 p=1040982 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:04:03,248 p=1040982 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:03,299 p=1040982 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:06,644 p=1040982 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:04:06,712 p=1040982 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:06,788 p=1040982 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:04:06,819 p=1040982 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:06,880 p=1040982 u=libracluster n=ansible | ok: [localhost] => {
+    "rpm_packages": null
+}
+2025-04-07 19:04:06,909 p=1040982 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:15,846 p=1040982 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 19:04:23,686 p=1040982 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 19:04:26,872 p=1040982 u=libracluster n=ansible |  [ERROR]: User interrupted execution
+
+2025-04-07 19:04:29,403 p=1041101 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:04:29,753 p=1041101 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:29,805 p=1041101 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:33,118 p=1041101 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:04:33,188 p=1041101 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:33,255 p=1041101 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:04:33,281 p=1041101 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:33,348 p=1041101 u=libracluster n=ansible | ok: [localhost] => {
+    "shared_packages": [
+        "mc",
+        "wget",
+        "telnet",
+        "curl",
+        "net-tools"
+    ]
+}
+2025-04-07 19:04:33,375 p=1041101 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:34,706 p=1041101 u=libracluster n=ansible |  [ERROR]: User interrupted execution
+
+2025-04-07 19:04:47,756 p=1041209 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:04:48,133 p=1041209 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:48,185 p=1041209 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:51,497 p=1041209 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:04:51,566 p=1041209 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:51,632 p=1041209 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:04:51,658 p=1041209 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:04:51,780 p=1041209 u=libracluster n=ansible | ok: [localhost] => {
+    "shared_packages|length": "5"
+}
+2025-04-07 19:04:51,809 p=1041209 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:00,641 p=1041209 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 19:05:03,438 p=1041209 u=libracluster n=ansible |  [ERROR]: User interrupted execution
+
+2025-04-07 19:05:06,201 p=1041327 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:05:06,564 p=1041327 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:06,616 p=1041327 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:09,892 p=1041327 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:05:09,970 p=1041327 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:10,059 p=1041327 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:05:10,084 p=1041327 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:10,235 p=1041327 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Unexpected templating type error occurred on ({{rpm_packages|length}}): object of type 'NoneType' has no len(). object of type 'NoneType' has no len()"}
+2025-04-07 19:05:10,240 p=1041327 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:10,240 p=1041327 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:05:47,512 p=1041466 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:05:47,883 p=1041466 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:47,941 p=1041466 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:51,248 p=1041466 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:05:51,313 p=1041466 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:51,383 p=1041466 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:05:51,407 p=1041466 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:51,515 p=1041466 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Unexpected templating type error occurred on ({{rpm_packages|length}}): object of type 'NoneType' has no len(). object of type 'NoneType' has no len()"}
+2025-04-07 19:05:51,519 p=1041466 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:05:51,519 p=1041466 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:06:21,558 p=1041577 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:06:21,914 p=1041577 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:21,964 p=1041577 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:25,263 p=1041577 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:06:25,331 p=1041577 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:25,396 p=1041577 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:06:25,422 p=1041577 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:25,547 p=1041577 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Unexpected templating type error occurred on ({{rpm_packages|length}}): object of type 'NoneType' has no len(). object of type 'NoneType' has no len()"}
+2025-04-07 19:06:25,552 p=1041577 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:25,553 p=1041577 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:06:32,656 p=1041664 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:06:33,013 p=1041664 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:33,063 p=1041664 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:36,394 p=1041664 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:06:36,483 p=1041664 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:36,556 p=1041664 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:06:36,590 p=1041664 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:36,646 p=1041664 u=libracluster n=ansible | ok: [localhost] => {
+    "rpm_packages": null
+}
+2025-04-07 19:06:36,673 p=1041664 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:06:45,452 p=1041664 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 19:06:53,431 p=1041664 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 19:07:01,604 p=1041664 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 19:07:09,392 p=1041664 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 19:07:17,600 p=1041664 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 19:07:17,630 p=1041664 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:07:17,712 p=1041664 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 19:07:17,717 p=1041664 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 19:07:17,731 p=1041664 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 19:07:17,744 p=1041664 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 19:07:17,752 p=1041664 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 19:07:17,755 p=1041664 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:07:17,786 p=1041664 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:07:17,829 p=1041664 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 19:07:17,833 p=1041664 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:07:17,834 p=1041664 u=libracluster n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 19:08:04,681 p=1041914 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:08:05,046 p=1041914 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:05,097 p=1041914 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:08,395 p=1041914 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:08:08,464 p=1041914 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:08,535 p=1041914 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:08:08,561 p=1041914 u=libracluster n=ansible | TASK [list] ****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:08,621 p=1041914 u=libracluster n=ansible | ok: [localhost] => {
+    "rpm_packages": null
+}
+2025-04-07 19:08:08,651 p=1041914 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:17,479 p=1041914 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 19:08:25,187 p=1041914 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 19:08:33,374 p=1041914 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 19:08:41,239 p=1041914 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 19:08:49,401 p=1041914 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 19:08:49,429 p=1041914 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:49,508 p=1041914 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 19:08:49,513 p=1041914 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 19:08:49,516 p=1041914 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 19:08:49,525 p=1041914 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 19:08:49,530 p=1041914 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 19:08:49,533 p=1041914 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:08:49,558 p=1041914 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:49,597 p=1041914 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 19:08:49,600 p=1041914 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:08:49,601 p=1041914 u=libracluster n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2025-04-07 19:09:51,637 p=1042253 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:09:51,974 p=1042253 u=libracluster n=ansible | ERROR! the field 'hosts' is required but was not set
+2025-04-07 19:10:08,520 p=1042300 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:10:08,872 p=1042300 u=libracluster n=ansible | PLAY [test len] ************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:08,922 p=1042300 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:11,917 p=1042300 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:10:11,987 p=1042300 u=libracluster n=ansible | TASK [test task] ***********************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:12,045 p=1042300 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:10:12,140 p=1042300 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:12,141 p=1042300 u=libracluster n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2025-04-07 19:10:31,386 p=1042393 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:10:31,724 p=1042393 u=libracluster n=ansible | PLAY [test len] ************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:31,774 p=1042393 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:34,694 p=1042393 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:10:34,767 p=1042393 u=libracluster n=ansible | TASK [test task] ***********************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:34,831 p=1042393 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:10:34,925 p=1042393 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:10:34,926 p=1042393 u=libracluster n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2025-04-07 19:12:09,377 p=1042602 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:12:09,732 p=1042602 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:09,784 p=1042602 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:13,083 p=1042602 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:12:13,149 p=1042602 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:13,212 p=1042602 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:12:13,237 p=1042602 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:13,267 p=1042602 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 19:12:13,270 p=1042602 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:13,271 p=1042602 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:12:36,121 p=1042711 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:12:36,481 p=1042711 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:36,533 p=1042711 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:39,819 p=1042711 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:12:39,885 p=1042711 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:39,949 p=1042711 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:12:39,974 p=1042711 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:40,006 p=1042711 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 19:12:40,010 p=1042711 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:12:40,011 p=1042711 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:13:05,088 p=1042834 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:13:05,433 p=1042834 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:13:05,482 p=1042834 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:13:08,853 p=1042834 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:13:08,920 p=1042834 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:13:08,987 p=1042834 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:13:09,012 p=1042834 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:13:09,044 p=1042834 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 19:13:09,048 p=1042834 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:13:09,049 p=1042834 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:14:52,040 p=1043063 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:14:52,393 p=1043063 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:14:52,443 p=1043063 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:14:55,752 p=1043063 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:14:55,818 p=1043063 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:14:55,887 p=1043063 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:14:55,914 p=1043063 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:14:55,980 p=1043063 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "lookup plugin (shared_packages) not found"}
+2025-04-07 19:14:55,986 p=1043063 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:14:55,987 p=1043063 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:16:10,585 p=1043257 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:16:10,931 p=1043257 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:10,985 p=1043257 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:14,331 p=1043257 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:16:14,400 p=1043257 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:14,467 p=1043257 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:16:14,493 p=1043257 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:14,551 p=1043257 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "lookup plugin (shared_packages) not found"}
+2025-04-07 19:16:14,555 p=1043257 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:14,556 p=1043257 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:16:26,921 p=1043354 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:16:27,281 p=1043354 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:27,331 p=1043354 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:30,616 p=1043354 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:16:30,683 p=1043354 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:30,768 p=1043354 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:16:30,799 p=1043354 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:30,846 p=1043354 u=libracluster n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid data passed to 'loop', it requires a list, got this instead: None. Hint: If you passed a list/dict of just one element, try adding wantlist=True to your lookup invocation or use q/query instead of lookup."}
+2025-04-07 19:16:30,853 p=1043354 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:30,856 p=1043354 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-04-07 19:16:44,193 p=1043444 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:16:44,542 p=1043444 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:44,594 p=1043444 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:47,837 p=1043444 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:16:47,902 p=1043444 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:47,970 p=1043444 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:16:47,995 p=1043444 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:48,039 p=1043444 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:16:48,069 p=1043444 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:48,118 p=1043444 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:16:48,146 p=1043444 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:48,189 p=1043444 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:16:48,218 p=1043444 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:48,261 p=1043444 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:16:48,366 p=1043444 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:16:48,367 p=1043444 u=libracluster n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2025-04-07 19:18:19,329 p=1043676 u=libracluster n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2025-04-07 19:18:19,676 p=1043676 u=libracluster n=ansible | PLAY [postinstall OS installation of essential packages] *******************************************************************************************************************************************************************************************************************
+2025-04-07 19:18:19,728 p=1043676 u=libracluster n=ansible | TASK [Gathering Facts] *****************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:18:23,032 p=1043676 u=libracluster n=ansible | ok: [localhost]
+2025-04-07 19:18:23,097 p=1043676 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:18:23,160 p=1043676 u=libracluster n=ansible | ok: [localhost] => {
+    "msg": "the distribution is Fedora"
+}
+2025-04-07 19:18:23,186 p=1043676 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:18:32,126 p=1043676 u=libracluster n=ansible | ok: [localhost] => (item=mc)
+2025-04-07 19:18:39,858 p=1043676 u=libracluster n=ansible | ok: [localhost] => (item=wget)
+2025-04-07 19:18:47,912 p=1043676 u=libracluster n=ansible | ok: [localhost] => (item=telnet)
+2025-04-07 19:18:55,825 p=1043676 u=libracluster n=ansible | ok: [localhost] => (item=curl)
+2025-04-07 19:19:04,086 p=1043676 u=libracluster n=ansible | ok: [localhost] => (item=net-tools)
+2025-04-07 19:19:04,114 p=1043676 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:19:04,192 p=1043676 u=libracluster n=ansible | skipping: [localhost] => (item=mc) 
+2025-04-07 19:19:04,204 p=1043676 u=libracluster n=ansible | skipping: [localhost] => (item=wget) 
+2025-04-07 19:19:04,206 p=1043676 u=libracluster n=ansible | skipping: [localhost] => (item=telnet) 
+2025-04-07 19:19:04,210 p=1043676 u=libracluster n=ansible | skipping: [localhost] => (item=curl) 
+2025-04-07 19:19:04,217 p=1043676 u=libracluster n=ansible | skipping: [localhost] => (item=net-tools) 
+2025-04-07 19:19:04,220 p=1043676 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:19:04,253 p=1043676 u=libracluster n=ansible | TASK [installation on Red Hat/CentOS/Fedora] *******************************************************************************************************************************************************************************************************************************
+2025-04-07 19:19:04,303 p=1043676 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:19:04,331 p=1043676 u=libracluster n=ansible | TASK [installation on Debian/Ubuntu] ***************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:19:04,373 p=1043676 u=libracluster n=ansible | skipping: [localhost]
+2025-04-07 19:19:04,463 p=1043676 u=libracluster n=ansible | PLAY RECAP *****************************************************************************************************************************************************************************************************************************************************************
+2025-04-07 19:19:04,464 p=1043676 u=libracluster n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
