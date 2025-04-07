@@ -2,6 +2,21 @@
     "title": "Menu principale",
     "items": [
         {
+            "text":"postinstall",
+            "items":[
+                {
+                    "text":"OS",
+                    "items":[
+                        {
+                            "text":"essential",
+                            "type":"ansible",
+                            "path":"ansible/test.yaml"
+                        }
+                    ]
+            }
+            ]
+        },
+        {
             "text":"hypervisor",
             "items":[
                 {
