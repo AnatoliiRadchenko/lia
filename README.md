@@ -15,7 +15,7 @@ This little startup was born spontaneously. I hope it will help to fix and organ
 Simply run:
 
 ```shell
-python menu_config.json
+python lia.py
 ```
 
 ## Roadmap
