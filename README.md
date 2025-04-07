@@ -1,8 +1,7 @@
-Lybra infrastructure automation
 
 # Libra Infrastructure Automation (LIA)
 
-It's a little diary of the scripts used daily.
+All scripts what you need in the same place.
 
 ## Presentation
 
