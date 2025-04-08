@@ -9,9 +9,9 @@
         chdir: /tmp
 
     - name: Estrapola il contenuto dal file salvato
-      shell: cat /tmp/androidstudio.html | sed -n 's/.*android-studio-\([0-9.]*\).*/\1/p'
-      register: android_version
+      shell: cat /tmp/androidstudio.html | sed -n 's/.*android-studio-\([0-9.]*\).*/\1/p'|tail -n 1
+      register: android_version_stdout
 
     - name: Mostra la versione estratta
       debug:
-        var: android_version.stdout
+        var: android_version_stdout.stdout
