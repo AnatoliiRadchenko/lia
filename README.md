@@ -7,8 +7,6 @@ All scripts what you need in the same place.
 
 This little startup was born spontaneously. I hope it will help to fix and organize small things and thoughts for both you and me.
 
-> A place to copy-paste your README.md from
-
 ## Getting started
 
 Simply run:
