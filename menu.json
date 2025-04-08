@@ -23,8 +23,12 @@
                     "text":"install VS code",
                     "type": "ansible",
                     "path": "dev_install_vscode.yml"
-                },
-            "android studio"
+                },{
+                    "text":"prendere ultima versione di android studio",
+                    "type": "ansible",
+                    "path": "android_studio_get_last_version.yml"
+                }
+            
             ]
         },
         {

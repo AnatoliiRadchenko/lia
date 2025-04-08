@@ -1,0 +1,17 @@
+---
+- name: Prendere l'ultima versione di Android Studio
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Scarica la pagina web e salvala in un file
+      shell: curl -s https://developer.android.com/studio > androidstudio.html
+      args:
+        chdir: /tmp
+
+    - name: Estrapola il contenuto dal file salvato
+      shell: cat /tmp/androidstudio.html | sed -n 's/.*android-studio-\([0-9.]*\).*/\1/p'
+      register: android_version
+
+    - name: Mostra la versione estratta
+      debug:
+        var: android_version.stdout
