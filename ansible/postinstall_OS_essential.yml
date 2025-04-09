@@ -9,6 +9,7 @@
       - telnet
       - curl
       - net-tools
+      - tmux
 
     rpm_packages: []
 
