@@ -32,3 +32,6 @@ Copy code to clipboard
 Copy
 # Installs the latest OSS release:
 sudo apt-get install grafana
+# http 3000
+# enable ser libracluster@libracluster:~$ sudo systemctl enable --now grafana-server.service
+# admin admin
