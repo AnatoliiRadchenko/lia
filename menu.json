@@ -36,7 +36,13 @@
             "items":[
                 {
                     "text":"Proxmox",
-                    "items":["install PVE (Virtual Environment)","install PBS (Backup Server)","import .ova","export VM","convert LXC","import from VMWare"]
+                    "items":[
+                        {
+                            "text":"start vm 100",
+                            "type":"ansible",
+                            "path":"proxmox/startVm100.yml"
+                        },
+                        "install PVE (Virtual Environment)","install PBS (Backup Server)","import .ova","export VM","convert LXC","import from VMWare"]
                 }
             ]
         },

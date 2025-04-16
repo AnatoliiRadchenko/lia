@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - proxmox_kvm:
+        api_user: root@pam
+        api_password: RadAnat13!
+        api_host: 192.168.125.190
+        vmid: 100
+        state: started
