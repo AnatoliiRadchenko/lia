@@ -74,7 +74,7 @@
       ansible.builtin.get_url:
         url: "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/{{ android_version_stdout.stdout }}/android-studio-{{ android_version_stdout.stdout }}-linux.tar.gz"
         dest: "{{ download_dir_on_remote_host }}/android_studio/android-studio-{{ android_version_stdout.stdout }}-linux.tar.gz"
-        checksum: "{{ android_studio.checksum }}"
+        #checksum: "{{ android_studio.checksum }}"
         timeout: 60
         owner: "{{ ansible_user_id }}"
         group: "{{ ansible_user_id }}"
